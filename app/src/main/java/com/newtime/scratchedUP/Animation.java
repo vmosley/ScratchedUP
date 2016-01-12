@@ -3,6 +3,8 @@ package com.newtime.scratchedUP;
 import android.graphics.Bitmap;
 //The only reason this is here is to test out branchA on github
 //nope
+
+//Change made to development branch
 public class Animation {
     //I think i understand this.
     private Bitmap[] frames;
