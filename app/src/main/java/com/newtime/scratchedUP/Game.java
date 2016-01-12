@@ -1,4 +1,4 @@
-package com.newtime.fromscratch;
+package com.newtime.scratchedUP;
 
 import android.app.Activity;
 import android.os.Bundle;

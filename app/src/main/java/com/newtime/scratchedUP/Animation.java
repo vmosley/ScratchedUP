@@ -1,4 +1,4 @@
-package com.newtime.fromscratch;
+package com.newtime.scratchedUP;
 
 import android.graphics.Bitmap;
 //The only reason this is here is to test out branchA on github

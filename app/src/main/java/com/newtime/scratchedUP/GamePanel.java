@@ -1,4 +1,4 @@
-package com.newtime.fromscratch;
+package com.newtime.scratchedUP;
 
         import android.content.Context;
         import android.graphics.BitmapFactory;
@@ -15,7 +15,7 @@ package com.newtime.fromscratch;
 
 
 
-public class GamePanel extends SurfaceView implements SurfaceHolder.Callback
+public class GamePanel extends SurfaceView implements SurfaceHolder.Callback //I understand extends; implements not so much
 {
     public static final int WIDTH = 856; //half of ratio of phone width
     public static final int HEIGHT = 480; // other half. still will fill whole phone

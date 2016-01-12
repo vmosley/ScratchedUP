@@ -1,4 +1,4 @@
-package com.newtime.fromscratch;
+package com.newtime.scratchedUP;
 
 import android.graphics.Canvas;
 import android.view.SurfaceHolder;

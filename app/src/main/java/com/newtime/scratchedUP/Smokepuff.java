@@ -1,4 +1,4 @@
-package com.newtime.fromscratch;
+package com.newtime.scratchedUP;
 
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -21,7 +21,7 @@ public class Smokepuff extends GameObject {
 
     public void draw(Canvas canvas) {
         Paint paint = new Paint();
-        paint.setColor(Color.YELLOW);
+        paint.setColor(Color.MAGENTA);
         paint.setStyle(Paint.Style.FILL);
         canvas.drawCircle(x - r, y - r, r, paint);
         canvas.drawCircle(x - r + 2, y - r - 2, r, paint);

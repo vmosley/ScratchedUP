@@ -1,4 +1,4 @@
-package com.newtime.fromscratch;
+package com.newtime.scratchedUP;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -44,7 +44,8 @@ public class Missile extends GameObject {
 
     @Override
     public int getWidth() {
-        //offset slightly for more realistic collision detection
+        //offset slightl
+        // for more realistic collision detection
         return width - 10;
     }
 }
