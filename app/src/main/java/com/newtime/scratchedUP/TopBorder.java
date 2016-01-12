@@ -1,4 +1,4 @@
-package com.newtime.fromscratch;
+package com.newtime.scratchedUP;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -10,7 +10,7 @@ public class TopBorder extends GameObject {
     private Bitmap image;
 
     public TopBorder(Bitmap res, int x, int y, int h) {
-        height = h;
+        super.height = h;
         width = 20;
         this.x = x;
         this.y = y;

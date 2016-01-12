@@ -1,4 +1,4 @@
-package com.newtime.fromscratch;
+package com.newtime.scratchedUP;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
