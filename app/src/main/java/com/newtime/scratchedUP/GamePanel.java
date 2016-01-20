@@ -512,7 +512,7 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback //I
         paint.setTypeface(Typeface.create(Typeface.DEFAULT, Typeface.BOLD));
         canvas.drawText("DISTANCE: " + (player.getScore() * 3), 10, HEIGHT - 10, paint);
         canvas.drawText("BEST: " + best, WIDTH - 215, HEIGHT - 10, paint);
-        canvas.drawText("HEALTH: " + player.getHealth(), 25, 400, paint);
+        //canvas.drawText("HEALTH: " + player.getHealth(), 25, 400, paint);
         for (int i = 0; i< player.getHealth(); i++)
         {
             canvas.drawBitmap(healthUnit,i*10 ,5,paint);

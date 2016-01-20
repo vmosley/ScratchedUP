@@ -54,7 +54,7 @@ public class Player extends GameObject { //<-understood
             dy -= 1.5;
         } else {
             //dy = (int)(dya+=1.1); //episode 5 1:37
-            dy += .9;
+            dy += 1.5;
         }
         if (dy > 14) dy = 14; // sets limit on fall speed?
         if (dy < -14) dy = -14;//see above
@@ -87,9 +87,10 @@ public class Player extends GameObject { //<-understood
 
     public void resetScore() {
         score = 0;
+        health = 3; // a cheat I don't know where to put this
     }
 
-    public void setHealth(int health){ this.health = health;}
+   public void setHealth(int health){ this.health = health;}
 
     public int getHealth(){ return health;}
 
@@ -98,7 +99,6 @@ public class Player extends GameObject { //<-understood
     }
 
     public void increaseHealth() {
-
         ++health;
     }
 }
