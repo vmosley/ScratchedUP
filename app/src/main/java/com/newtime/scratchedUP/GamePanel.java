@@ -515,7 +515,7 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback //I
         //canvas.drawText("HEALTH: " + player.getHealth(), 25, 400, paint);
         for (int i = 0; i< player.getHealth(); i++)
         {
-            canvas.drawBitmap(healthUnit,i*10 ,5,paint);
+            canvas.drawBitmap(healthUnit,i*30 ,5,paint);
         }
 
         //canvas.drawText("Lives " + (player.healthbar), 10, HEIGHT - 100, paint);
