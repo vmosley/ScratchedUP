@@ -31,14 +31,14 @@ public class Explosion { //why's this not extending game object?
     }
 
     public void draw(Canvas canvas) {
-        if (!animator.playedOnce()) //boolean (true or false)
+        if (!animator.isPlayedOnce()) //boolean (true or false)
         {
             canvas.drawBitmap(animator.getImage(), x, y, null); //
         }
     }
 
     public void update() {
-        if (!animator.playedOnce()) {
+        if (!animator.isPlayedOnce()) {
             animator.update();
         }
     }
