@@ -5,7 +5,8 @@ import android.graphics.Bitmap;
 //nope
 
 //Change made to development branch. with proper commit note this time
-public class Animation {
+//Name probably should be Animator
+public class Animator {
     //I think i understand this.
     private Bitmap[] frames;
     private int currentFrame;

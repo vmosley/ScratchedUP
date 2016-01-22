@@ -10,7 +10,7 @@ public class Player extends GameObject { //<-understood
     //private double dya;
     private boolean up;
     private boolean playing;
-    private Animation animation = new Animation(); //Ok I have some trouble with this
+    private Animator animation = new Animator(); //Ok I have some trouble with this
     /* the instance is called animation, it is a new hAnimation. Why is new needed?
     * because it's not old? why doesn't playing need a new boolean? Because it's a primative.
     * new makes things explicit, this is good.

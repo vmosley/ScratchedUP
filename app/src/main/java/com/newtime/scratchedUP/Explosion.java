@@ -9,7 +9,7 @@ public class Explosion { //why's this not extending game object?
     private int width;  //could be from game object but not
     private int height; //could be from game object but not
     private int row;    //row of the animation sheet (5 by 5 sheet)
-    private Animation animation = new Animation(); //Ok This I need to learn more on
+    private Animator animation = new Animator(); //Ok This I need to learn more on
     private Bitmap spritesheet; //The 5 by 5 sheet
 
     public Explosion(Bitmap res, int x, int y, int w, int h, int numFrames) //there's gonna be an explosion

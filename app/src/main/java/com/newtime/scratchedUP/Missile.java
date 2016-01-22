@@ -10,7 +10,7 @@ public class Missile extends GameObject {
     private int score;
     private int speed;
     private Random rand = new Random();
-    private Animation animation = new Animation();
+    private Animator animation = new Animator();
     private Bitmap spritesheet;
 
     public Missile(Bitmap res, int x, int y, int w, int h, int s, int numFrames) {
