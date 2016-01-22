@@ -3,6 +3,7 @@ package com.newtime.scratchedUP;
 import android.graphics.Bitmap;
 //Testing github connection
 //Name probably should be Animator
+//
 public class Animator {
 
     private Bitmap[] frames;  //Get image with frames in it
@@ -10,6 +11,8 @@ public class Animator {
     private long startTime;   //Has to do with speed of animation
     private long delay;       //See above
     private boolean playedOnce; //Has to do with repeating animation loop
+
+    //implicit constructor
 
     // no idea
     public void setFrames(Bitmap[] frames) { //takes an array of images as argument
