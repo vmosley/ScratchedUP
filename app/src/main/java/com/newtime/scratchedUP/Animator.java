@@ -1,10 +1,7 @@
 package com.newtime.scratchedUP;
 
 import android.graphics.Bitmap;
-//The only reason this is here is to test out branchA on github
-//nope
-
-//Change made to development branch. with proper commit note this time
+//Testing github connection
 //Name probably should be Animator
 public class Animator {
     //I think i understand this.
