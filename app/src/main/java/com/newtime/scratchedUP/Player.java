@@ -10,8 +10,8 @@ public class Player extends GameObject { //<-understood
     //private double dya;
     private boolean up;
     private boolean playing;
-    private Animator animation = new Animator(); //Ok I have some trouble with this
-    /* the instance is called animation, it is a new hAnimation. Why is new needed?
+    private Animator animator = new Animator(); //Ok I have some trouble with this
+    /* the instance is called animator, it is a new hAnimation. Why is new needed?
     * because it's not old? why doesn't playing need a new boolean? Because it's a primative.
     * new makes things explicit, this is good.
     *isn't Animantion a verb/ an action. how can it be a noun? methods are verbs.
@@ -33,8 +33,8 @@ public class Player extends GameObject { //<-understood
         for (int i = 0; i < image.length; i++) {
             image[i] = Bitmap.createBitmap(spritesheet, i * width, 0, width, height);
         }
-        animation.setFrames(image);
-        animation.setDelay(10);
+        animator.setFrames(image);
+        animator.setDelay(10);
         startTime = System.nanoTime();
     }
 
@@ -48,7 +48,7 @@ public class Player extends GameObject { //<-understood
             score++;
             startTime = System.nanoTime();
         }
-        animation.update();
+        animator.update();
         if (up) {
             //dy = (int) (dya+= 1.1);
             dy -= 1.5;
@@ -63,7 +63,7 @@ public class Player extends GameObject { //<-understood
     }
 
     public void draw(Canvas canvas) {
-        canvas.drawBitmap(animation.getImage(), x, y, null);
+        canvas.drawBitmap(animator.getImage(), x, y, null);
     }
 
     public void setHealthbar() {

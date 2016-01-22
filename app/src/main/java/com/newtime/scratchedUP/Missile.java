@@ -10,7 +10,7 @@ public class Missile extends GameObject {
     private int score;
     private int speed;
     private Random rand = new Random();
-    private Animator animation = new Animator();
+    private Animator animator = new Animator();
     private Bitmap spritesheet;
 
     public Missile(Bitmap res, int x, int y, int w, int h, int s, int numFrames) {
@@ -26,18 +26,18 @@ public class Missile extends GameObject {
         for (int i = 0; i < image.length; i++) {
             image[i] = Bitmap.createBitmap(spritesheet, 0, i * height, width, height);
         }
-        animation.setFrames(image);
-        animation.setDelay(100 - speed);
+        animator.setFrames(image);
+        animator.setDelay(100 - speed);
     }
 
     public void update() {
         x -= speed;
-        animation.update();
+        animator.update();
     }
 
     public void draw(Canvas canvas) {
         try {
-            canvas.drawBitmap(animation.getImage(), x, y, null);
+            canvas.drawBitmap(animator.getImage(), x, y, null);
         } catch (Exception e) {
         }
     }

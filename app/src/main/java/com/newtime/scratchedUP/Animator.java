@@ -17,7 +17,7 @@ public class Animator {
         this.currentFrame = 0;
         this.startTime = System.nanoTime();
     }
-    // push From BranchA back to Master hopefully
+
     public void setDelay(long d) {
         this.delay = d; //this.delay and delay are the same class fields
     }
