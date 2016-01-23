@@ -10,7 +10,7 @@ public class Background { //makes sense I need a background
     private Bitmap image; // yep need an image
     private int x, y, dx; //x location, and dx is change of x (horizontal scrolling)
 
-    public Background(Bitmap res) // my constructor (things I need) in this case picture/bitmap
+    public Background(Bitmap res) // my constructor needs a resource. will be passed thru class as image
     {
         image = res; // by bitmap now is named 'image' [passed by copy or ref <skip for now>]
         dx = GamePanel.MOVESPEED;  // hmmm so my MOVESPEED is static? Yep; reachable. Caps for final <const>

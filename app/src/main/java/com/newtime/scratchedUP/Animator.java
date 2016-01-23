@@ -15,7 +15,7 @@ public class Animator {
     //implicit constructor
 
     // no idea
-    public void setFrames(Bitmap[] frames) { //takes an array of images as argument
+    public void setFrames(Bitmap[] frames) {  //takes an array of images as argument
         this.frames = frames;       //parameter 'frames' equals class 'frames' or this.frames
         this.currentFrame = 0;      //current frame = first image in array will start at 0; not 1
         this.startTime = System.nanoTime(); //time frame of reference comes from actual time

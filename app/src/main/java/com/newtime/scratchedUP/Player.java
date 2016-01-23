@@ -54,7 +54,7 @@ public class Player extends GameObject { //<-understood
             dy -= 1.5;
         } else {
             //dy = (int)(dya+=1.1); //episode 5 1:37
-            dy += 1.5;
+            dy += .5;
         }
         if (dy > 14) dy = 14; // sets limit on fall speed?
         if (dy < -14) dy = -14;//see above
