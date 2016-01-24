@@ -21,16 +21,16 @@ public class Player extends GameObject { //<-understood
     /* */
 
     public Player(Bitmap res, int w, int h, int numFrames) {
-        x = 100;
+        x = 100; //changing this value somehow screws up game
         y = GamePanel.HEIGHT / 2;
         dy = 0;
         score = 0;
-        health = 3;
+        health = 5;
         height = h;
         width = w;
         Bitmap[] image = new Bitmap[numFrames];
         spritesheet = res;
-        for (int i = 0; i < image.length; i++) {
+        for (int i = 0; i < image.length; i++) { //chops up spritesheet into 3 images based on width
             image[i] = Bitmap.createBitmap(spritesheet, i * width, 0, width, height);
         }
         animator.setFrames(image);
@@ -87,7 +87,7 @@ public class Player extends GameObject { //<-understood
 
     public void resetScore() {
         score = 0;
-        health = 3; // a cheat I don't know where to put this
+        health = 5; // a cheat I don't know where to put this
     }
 
    public void setHealth(int health){ this.health = health;}

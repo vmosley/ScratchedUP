@@ -236,7 +236,12 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback //I
             {
                 missiles.add(new Missile(BitmapFactory.decodeResource(getResources(),R.drawable
                         .missile)
-                        ,WIDTH + 10 ,HEIGHT/2, 45, 15, player.getScore(), 13));
+                        ,WIDTH + 10   // loads rightwards offscreen missile
+                        ,HEIGHT/2     //this missle 'missile[0]' will be middle of screen
+                        ,45           //45 pixels original... making this bigger does noting visible
+                        ,15           //default is 15
+                        ,player.getScore() //gets current score
+                        ,13));        //13 missiles on spritesheet
             }
             else
             {
@@ -259,6 +264,7 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback //I
 
             if(collision(missiles.get(i),player))
             {
+                //started = true;
                 missiles.remove(i);
                 player.decreaseHealth();
                 if(player.getHealth()<0) {

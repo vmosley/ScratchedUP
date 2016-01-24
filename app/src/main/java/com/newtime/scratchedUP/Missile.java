@@ -14,18 +14,23 @@ public class Missile extends GameObject {
     private Bitmap spritesheet;
 
     public Missile(Bitmap res, int x, int y, int w, int h, int s, int numFrames) {
-        super.x = x;
-        super.y = y;
-        width = w;
-        height = h;
-        speed = 7 + (int) (rand.nextDouble() * score / 30);
-        //cap missile speed
-        if (speed > 40) speed = 40;
-        Bitmap[] image = new Bitmap[numFrames];
         spritesheet = res;
-        for (int i = 0; i < image.length; i++) {
+        Bitmap[] image = new Bitmap[numFrames]; //create blank Bitmaps for frames
+
+        super.x = x; //location
+        super.y = y; // location
+        width = w;  //size, limited by bitmap size
+        height = h; // size, limited by bitmap size
+        speed = 7 + (int) (rand.nextDouble() * score / 30); //speed based on score rising
+
+        if (speed > 70)
+            speed = 70; //cap missile speed
+
+        for (int i = 0; i < image.length; i++) { // for 3 times(numFrames)
             image[i] = Bitmap.createBitmap(spritesheet, 0, i * height, width, height);
+            //cut/paste image from helicopter spritesheet, start at top of image, increment by height of One helicopter
         }
+
         animator.setFrames(image);
         animator.setDelay(100 - speed);
     }
